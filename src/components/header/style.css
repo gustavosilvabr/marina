@@ -1,0 +1,135 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    background-color: rgba(81, 21, 91, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 0 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+
+}
+
+.header .btn-logo {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+    padding: 10px;
+
+}
+
+.header .btn-logo:hover {
+    transform: scale(1.02);
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.header nav ul li {
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.header nav ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #D4AF37;
+    transition: width 0.3s ease;
+}
+
+.header nav ul li:hover {
+    color: #fff;
+}
+
+.header nav ul li:hover::after {
+    width: 100%;
+}
+
+.header .btn-wpp {
+    background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Gill Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    transition: all 0.3s ease;
+    animation: pulseHeader 2.5s infinite ease-in-out;
+}
+
+@keyframes pulseHeader {
+    0% {
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    }
+    50% {
+        box-shadow: 0 4px 25px rgba(212, 175, 55, 0.6);
+    }
+    100% {
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    }
+}
+
+.header .btn-wpp:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+    background: linear-gradient(135deg, #B8860B 0%, #D4AF37 100%);
+    animation: none;
+}
+
+.header .btn-wpp svg {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .header {
+        padding: 10px;
+        padding-bottom: 5px;
+        height: 80px;
+    }
+
+    .header .btn-logo {
+        padding: 5px;
+
+    }
+
+    .header nav {
+        display: none;
+        /* Em um cenário real, você teria um menu hambúrguer aqui */
+    }
+
+    .header .btn-wpp {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+}
