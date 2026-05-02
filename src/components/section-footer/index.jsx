@@ -2,14 +2,23 @@ import "./style.css"
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { FaInstagram, FaWhatsapp, FaMapMarkerAlt, FaEnvelope, FaRegHeart } from "react-icons/fa";
 
 import logo from "../../assets/logo.png"
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 export default function SectionFooter() {
     const footerRef = useRef(null);
+
+    const handleScroll = (targetId) => {
+        gsap.to(window, {
+            duration: 1.2,
+            scrollTo: { y: targetId, offsetY: 80 },
+            ease: "power3.inOut"
+        });
+    };
 
     useLayoutEffect(() => {
         const ctx = gsap.context(() => {
@@ -42,10 +51,10 @@ export default function SectionFooter() {
                 <div className="footer-column links">
                     <h4>Navegação</h4>
                     <ul>
-                        <li><a href="#hero">Início</a></li>
-                        <li><a href="#sobre">Sobre Mim</a></li>
-                        <li><a href="#trabalho">Meu Trabalho</a></li>
-                        <li><a href="#avaliacao">Avaliações</a></li>
+                        <li><a href="#inicio" onClick={(e) => { e.preventDefault(); handleScroll("#inicio"); }}>Inicio</a></li>
+                        <li><a href="#sobreMim" onClick={(e) => { e.preventDefault(); handleScroll("#sobreMim"); }}>Sobre Mim</a></li>
+                        <li><a href="#servicos" onClick={(e) => { e.preventDefault(); handleScroll("#servicos"); }}>Serviços</a></li>
+                        <li><a href="#avaliacoes" onClick={(e) => { e.preventDefault(); handleScroll("#avaliacoes"); }}>Avaliações</a></li>
                     </ul>
                 </div>
 
@@ -59,8 +68,8 @@ export default function SectionFooter() {
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:contato@marinahomelaser.com.br">
-                                <FaEnvelope /> E-mail Profissional
+                            <a href="mailto:mkt.homelaser@gmail.com">
+                                <FaEnvelope /> mkt.homelaser@gmail.com
                             </a>
                         </li>
                         <li>
@@ -95,7 +104,7 @@ export default function SectionFooter() {
             </div>
 
             <div className="footer-bottom">
-                <p>&copy; 2024 Marina Home Laser. Todos os direitos reservados.</p>
+                <p>&copy; 2026 Marina Home Laser. Todos os direitos reservados.</p>
                 <p className="dev-credit">Desenvolvido com carinho para a saúde feminina.</p>
             </div>
         </footer>

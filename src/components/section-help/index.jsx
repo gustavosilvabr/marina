@@ -93,9 +93,9 @@ export default function SectionHelp() {
     }, []);
 
     return (
-        <section className="section-help" ref={sectionRef}>
+        <section className="section-help" id="servicos" ref={sectionRef}>
             <div className="help-content">
-                <h1 className="help-title">COMO POSSO TE AJUDAR?</h1>
+                <h2 className="help-title">COMO POSSO TE AJUDAR?</h2>
                 <span>------<FaRegHeart /> ------</span>
             </div>
             <div className='help-cards'>

@@ -116,7 +116,7 @@ export default function SectionAvaliacao() {
     };
 
     return (
-        <section className="avaliacao" id="avaliacao" ref={sectionRef}>
+        <section className="avaliacao" id="avaliacoes" ref={sectionRef}>
             <div className="avaliacao-header">
                 <h2>O que dizem os nossos pacientes</h2>
                 <p>Histórias reais de quem transformou o cuidado com a saúde através do nosso laser.</p>

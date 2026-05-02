@@ -103,7 +103,7 @@ export default function SectionTrabalho() {
     }, []);
 
     return (
-        <section className="section-trabalho" ref={sectionRef}>
+        <section className="section-trabalho" id="meuTrabalho" ref={sectionRef}>
             <div className="container">
                 <h2>CONHEÇA MEU TRABALHO</h2>
                 <span className="span">------<FaRegHeart /> ------</span>
@@ -169,7 +169,7 @@ export default function SectionTrabalho() {
                     </a>
                 </div>
             </div>
-            <div className='about-content'>
+            <div className='about-content' id="sobreMim">
                 <div className='about-text'>
                     <h2>CUIDADO QUE FAZ A DIFERENÇA</h2>
                     <p>Meu objetivo é oferecer um atendimento de excelência, <br />

@@ -64,11 +64,10 @@ export default function SectionHero() {
     }, []);
 
     return (
-        <section className="section-hero" ref={heroRef}>
+        <section className="section-hero" id="inicio" ref={heroRef}>
             <div className="hero-content">
                 <div className='hero-content-header'>
-                    <h1>CUIDADO QUE</h1>
-                    <h1>ACOLHE, TRATA E <br /><span className='transforma'>Transforma</span></h1>
+                    <h1>CUIDADO QUE ACOLHE, TRATA E <br /><span className='transforma'>Transforma</span></h1>
                     <h3 className='h3-top'>Enfermagem especializada com laserterapia, <br /> curativos e apoio a amamentação <br /> no conforto do seu lar.</h3>
                 </div>
                 <div className="hero-description">
