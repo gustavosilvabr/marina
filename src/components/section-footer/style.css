@@ -11,7 +11,7 @@
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-bottom: 60px;
 }
@@ -22,10 +22,12 @@
 }
 
 .footer-logo {
-    max-width: 300px;
+    max-width: 450px;
+    width: 100%;
     height: auto;
     margin-bottom: 25px;
-  
+    /* Efeito Dourado (D4AF37) */
+    filter: brightness(0) saturate(100%) invert(84%) sepia(21%) saturate(1000%) hue-rotate(3deg) brightness(105%) contrast(100%);
 }
 
 .footer-column h3 {

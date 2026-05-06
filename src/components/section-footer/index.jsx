@@ -40,13 +40,7 @@ export default function SectionFooter() {
     return (
         <footer className="section-footer" ref={footerRef}>
             <div className="footer-container">
-                {/* Coluna 1: Branding */}
-                <div className="footer-column branding">
-                    <img src={logo} alt="Marina Home Laser Logo" className="footer-logo" />
-                    <h3>MARINA HOME LASER <FaRegHeart /></h3>
-                    <p>Especialista em Laserterapia e consultoria de amamentação, levando cuidado e tecnologia no conforto do seu lar.</p>
-                </div>
-
+         
                 {/* Coluna 2: Navegação */}
                 <div className="footer-column links">
                     <h4>Navegação</h4>

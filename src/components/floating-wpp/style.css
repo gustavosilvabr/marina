@@ -1,0 +1,68 @@
+.floating-wpp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+    cursor: pointer;
+    z-index: 9999;
+    transition: background-color 0.3s ease;
+}
+
+.floating-wpp:hover {
+    background-color: #128C7E;
+}
+
+.tooltip-wpp {
+    position: absolute;
+    right: 85px;
+    background-color: #fff;
+    color: #51155B;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.tooltip-wpp::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left: 10px solid #fff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.floating-wpp:hover .tooltip-wpp {
+    opacity: 1;
+    visibility: visible;
+    right: 90px;
+}
+
+@media (max-width: 768px) {
+    .floating-wpp {
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .tooltip-wpp {
+        display: none; /* Esconde o tooltip no mobile para não atrapalhar */
+    }
+}

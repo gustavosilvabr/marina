@@ -3,7 +3,7 @@ import { useState, useLayoutEffect, useRef } from "react";
 import './style.css'
 import { FaRegHeart, FaPlay } from "react-icons/fa";
 import { BsCheck2Circle } from "react-icons/bs";
-import fotoDra from '../../assets/marina.png'
+import fotoDra from '../../assets/marina.jpeg'
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import video1 from '../../assets/video1.mp4'

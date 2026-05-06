@@ -1,0 +1,157 @@
+.section-cta {
+    padding: 100px 4vw;
+    background: linear-gradient(135deg, #51155B 0%, #2D0B33 100%);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Elementos decorativos de fundo */
+.section-cta::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.cta-container {
+    max-width: 1000px;
+    width: 100%;
+    z-index: 2;
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.cta-logo {
+    width: 450px;
+    max-width: 90vw;
+    height: auto;
+    /* Efeito Dourado (D4AF37) */
+    filter: brightness(0) saturate(100%) invert(84%) sepia(21%) saturate(1000%) hue-rotate(3deg) brightness(105%) contrast(100%);
+    opacity: 0.9;
+}
+
+.cta-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 700px;
+}
+
+.cta-subtitle {
+    color: #FFD700;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.cta-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 5vw, 60px);
+    color: #fff;
+    font-weight: 800;
+}
+
+.cta-description {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+.cta-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.cta-button {
+    background: #25D366;
+    color: #fff;
+    border: none;
+    padding: 20px 45px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    box-shadow: 0 15px 35px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button:hover {
+    background: #20ba5a;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(37, 211, 102, 0.4);
+}
+
+/* Efeito de brilho */
+.cta-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    transform: skewX(-25deg);
+    transition: 0.5s;
+}
+
+.cta-number {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+.cta-number:hover {
+    opacity: 1;
+    color: #FFD700;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .section-cta {
+        padding: 80px 20px;
+    }
+
+    .cta-logo {
+        width: 300px;
+    }
+
+    .cta-button {
+        width: 100%;
+        justify-content: center;
+        padding: 18px 30px;
+        font-size: 18px;
+    }
+
+    .cta-number {
+        font-size: 20px;
+    }
+}

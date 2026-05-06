@@ -5,7 +5,10 @@ import SectionTrabalho from "./components/section-trabalho"
 import SectionAvaliacao from "./components/section-avaliacao"
 import SectionReviews from "./components/section-reviews"
 import SectionSlide from "./components/section-slide"
+import SectionGaleria from "./components/section-galeria"
 import SectionFooter from "./components/section-footer"
+import SectionCTA from "./components/section-cta"
+import FloatingWpp from "./components/floating-wpp"
 
 import './style.css'
 function App() {
@@ -15,10 +18,13 @@ function App() {
       <SectionHero />
       <SectionHelp />
       <SectionTrabalho />
+      <SectionGaleria />
       <SectionAvaliacao />
+      
       <SectionReviews />
-      <SectionSlide />
+      <SectionCTA />
       <SectionFooter />
+      <FloatingWpp />
     </div>
   )
 }

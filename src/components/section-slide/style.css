@@ -58,7 +58,7 @@
 
 /* Efeito de filtro para o 'Antes' para simular tratamento se a imagem for igual */
 .image-before img {
-    filter: saturate(0.8) contrast(1.1) brightness(0.9);
+    /* Filtro removido pois agora temos imagens reais de antes e depois */
 }
 
 .image-after {

@@ -3,8 +3,6 @@ import { useState, useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaArrowsAltH } from "react-icons/fa";
-import antes from "../../assets/antes.png";
-import depois from "../../assets/depois.png";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -63,7 +61,7 @@ export default function SectionSlide() {
             >
                 {/* Imagem do ANTES */}
                 <div className="image-before">
-                    <img src={antes} alt="Antes" />
+               
                     <div className="label before">ANTES</div>
                 </div>
 
@@ -72,7 +70,7 @@ export default function SectionSlide() {
                     className="image-after" 
                     style={{ clipPath: `inset(0 0 0 ${sliderPos}%)` }}
                 >
-                    <img src={depois} alt="Depois" />
+                    
                     <div className="label after">DEPOIS</div>
                 </div>
 
