@@ -1,0 +1,221 @@
+.section-laser {
+    padding: 100px 50px;
+    background: linear-gradient(135deg, #fff5fd 0%, #ffffff 50%, #f3e8ff 100%);
+    overflow: hidden;
+}
+
+.laser-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* ── Imagem ── */
+.laser-image-wrapper {
+    position: relative;
+}
+
+.laser-image {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(81, 21, 91, 0.18);
+}
+
+.laser-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        transparent 55%,
+        rgba(81, 21, 91, 0.55) 100%
+    );
+    z-index: 1;
+    border-radius: 24px;
+}
+
+.laser-image img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.8s ease;
+}
+
+.laser-image:hover img {
+    transform: scale(1.04);
+}
+
+.laser-image-badge {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.laser-image-badge span {
+    color: #D4AF37;
+    animation: starPulse 2s infinite;
+}
+
+@keyframes starPulse {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    50%       { transform: scale(1.3) rotate(20deg); }
+}
+
+/* Decoração fora da imagem */
+.laser-image-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.25), transparent 70%);
+    z-index: 0;
+}
+
+.laser-image-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(81, 21, 91, 0.18), transparent 70%);
+    z-index: 0;
+}
+
+/* ── Texto ── */
+.laser-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.laser-eyebrow {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #D4AF37;
+}
+
+.laser-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #51155B;
+    line-height: 1.2;
+}
+
+.laser-title em {
+    font-style: normal;
+    background: linear-gradient(90deg, #51155B, #D4AF37);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.laser-divider {
+    width: 60px;
+    height: 3px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #51155B, #D4AF37);
+}
+
+.laser-description {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+    font-weight: 400;
+}
+
+.laser-highlight-box {
+    background: linear-gradient(135deg, #51155B 0%, #7b2d8b 100%);
+    border-radius: 16px;
+    padding: 24px 28px;
+    border-left: 4px solid #D4AF37;
+}
+
+.laser-highlight-box p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+}
+
+.laser-highlight-box strong {
+    color: #D4AF37;
+    font-weight: 800;
+}
+
+.laser-cta-button {
+    align-self: flex-start;
+    background: linear-gradient(135deg, #51155B, #7b2d8b);
+    color: #fff;
+    padding: 16px 36px;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 24px rgba(81, 21, 91, 0.3);
+}
+
+.laser-cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 36px rgba(81, 21, 91, 0.45);
+    background: linear-gradient(135deg, #D4AF37, #c9a020);
+    color: #fff;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+    .section-laser {
+        padding: 60px 20px;
+    }
+
+    .laser-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .laser-image img {
+        height: 320px;
+    }
+
+    .laser-title {
+        font-size: 30px;
+    }
+
+    .laser-description {
+        font-size: 15px;
+    }
+
+    .laser-highlight-box p {
+        font-size: 16px;
+    }
+}

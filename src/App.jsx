@@ -1,5 +1,6 @@
 import Header from "./components/header"
 import SectionHelp from "./components/section-help"
+import SectionLaser from "./components/section-laser"
 import SectionHero from "./components/section-hero"
 import SectionTrabalho from "./components/section-trabalho"
 import SectionAvaliacao from "./components/section-avaliacao"
@@ -18,6 +19,7 @@ function App() {
       <Header />
       <SectionHero />
       <SectionHelp />
+      <SectionLaser />
       <SectionTrabalho />
       <SectionGaleria />
       <SectionEvolucao />
