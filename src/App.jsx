@@ -6,6 +6,7 @@ import SectionAvaliacao from "./components/section-avaliacao"
 import SectionReviews from "./components/section-reviews"
 import SectionSlide from "./components/section-slide"
 import SectionGaleria from "./components/section-galeria"
+import SectionEvolucao from "./components/section-evolucao"
 import SectionFooter from "./components/section-footer"
 import SectionCTA from "./components/section-cta"
 import FloatingWpp from "./components/floating-wpp"
@@ -19,8 +20,8 @@ function App() {
       <SectionHelp />
       <SectionTrabalho />
       <SectionGaleria />
+      <SectionEvolucao />
       <SectionAvaliacao />
-      
       <SectionReviews />
       <SectionCTA />
       <SectionFooter />
