@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './style.css';
-import MarinaImg from '../../assets/marina2.png';
-import foto1 from '../../assets/foto1.jpeg';
-import foto2 from '../../assets/foto2.jpeg';
-import foto3 from '../../assets/foto3.jpeg';
-import foto4 from '../../assets/foto4.jpeg';
+import MarinaImg from '../../assets/marina2.webp';
+import foto1 from '../../assets/foto1.webp';
+import foto2 from '../../assets/foto2.webp';
+import foto3 from '../../assets/foto3.webp';
+import foto4 from '../../assets/foto4.webp';
 const cases = [
   {
     id: 1,

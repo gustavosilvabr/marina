@@ -2,7 +2,6 @@ import { FaRegHeart } from "react-icons/fa";
 import { useState, useLayoutEffect, useRef } from "react";
 import './style.css';
 import { IoIosArrowRoundForward } from "react-icons/io";
-import Curativo from "../../assets/curativo.png"
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -10,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function SectionHelp() {
     const sectionRef = useRef(null);
-    const [data, setData] = useState([
+    const [data] = useState([
         {
             id: 1,
             img: "https://alynedoula.com/wp-content/uploads/2023/04/DSC_5404-1-1-1024x721.webp",

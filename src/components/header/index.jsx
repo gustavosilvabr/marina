@@ -1,6 +1,6 @@
 import { useLayoutEffect, useRef } from "react";
 import "./style.css"
-import Logo from "../../assets/logo.png"
+import Logo from "../../assets/logo.webp"
 import { FaWhatsapp } from "react-icons/fa";
 import gsap from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";

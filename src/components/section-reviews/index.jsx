@@ -41,7 +41,7 @@ export default function SectionReviews() {
 
     useLayoutEffect(() => {
         const ctx = gsap.context(() => {
-            const totalWidth = scrollRef.current.offsetWidth;
+
             
             // Carrossel Infinito Suave
             gsap.to(".reviews-track", {

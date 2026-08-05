@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import laserImg from "../../assets/laser.png";
+import laserImg from "../../assets/laser.webp";
 import "./style.css";
 
 gsap.registerPlugin(ScrollTrigger);

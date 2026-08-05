@@ -1,17 +1,17 @@
 import { LuInstagram } from "react-icons/lu";
-import { useState, useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import './style.css'
 import { FaRegHeart, FaPlay } from "react-icons/fa";
 import { BsCheck2Circle } from "react-icons/bs";
-import fotoDra from '../../assets/marina.jpeg'
+import fotoDra from '../../assets/marina.webp'
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import video1 from '../../assets/video1.mp4'
 import video2 from '../../assets/video2.mp4'
 import video3 from '../../assets/video3.mp4'
-import capa1 from '../../assets/capa1.png'
-import capa2 from '../../assets/capa2.png'
-import capa3 from '../../assets/capa3.png'
+import capa1 from '../../assets/capa1.webp'
+import capa2 from '../../assets/capa2.webp'
+import capa3 from '../../assets/capa3.webp'
 gsap.registerPlugin(ScrollTrigger);
 
 export default function SectionTrabalho() {
@@ -21,17 +21,6 @@ export default function SectionTrabalho() {
         { id: 2, url:video3, title: 'Como funciona laserTerapia',capa:capa2 },
         { id: 3, url:video2, title: 'Dicas de amamentação',capa:capa3},
     ]
-    const [playingVideo, setPlayingVideo] = useState(null);
-    const [currentVideo, setCurrentVideo] = useState(null);
-
-    const handlePlayVideo = (url) => {
-        setCurrentVideo(url);
-        setPlayingVideo(true);
-    }
-    const handlePauseVideo = () => {
-        setPlayingVideo(false);
-    }
-
     useLayoutEffect(() => {
         const ctx = gsap.context(() => {
             // Animação do Título Galeria (Estilo SectionHelp)

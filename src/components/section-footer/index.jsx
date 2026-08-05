@@ -3,9 +3,8 @@ import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import { FaInstagram, FaWhatsapp, FaMapMarkerAlt, FaEnvelope, FaRegHeart } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 
-import logo from "../../assets/logo.png"
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 

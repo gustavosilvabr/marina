@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://marinahomelaser.com.br/sitemap.xml
+Sitemap: https://marina-topaz.vercel.app/sitemap.xml

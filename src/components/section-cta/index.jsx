@@ -1,7 +1,7 @@
 import "./style.css"
 import { useLayoutEffect, useRef } from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/logo.webp";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 

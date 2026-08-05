@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './style.css';
-import galeria1 from '../../assets/galeria1.png';
-import galeria2 from '../../assets/galeria2.png';
-import galeria3 from '../../assets/galeria3.png';
+import galeria1 from '../../assets/galeria1.webp';
+import galeria2 from '../../assets/galeria2.webp';
+import galeria3 from '../../assets/galeria3.webp';
 
 const casos = [
   {
